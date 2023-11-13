@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=".//styles/styles.css" rel="stylesheet">
+    <link href=".//styles/fonts.css" rel="stylesheet-fonts">
+    <link href=".//styles/media.css" rel="stylesheet-media">
+    <link rel="icon" href=".//components/images/logo-teacharbarbara-removebg-preview.png">
+    <title>Teacher Bárbara</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <header>
+        <div id="title">
+            <h1>Teacher</h1>
+            <h1>Bárbara</h1>
+        </div>
+        <img id="imglateral" src="./components/images/logo-teacharbarbara.png" alt="teacherbarbaraf">
+        <nav>
+        <ul>
+            <!--ids para uso no CSS-->
+            <a id="links" href="#inicio">
+                <li>Início</li>
+            </a>
+            <a id="links" href="#about">
+                <li>Sobre</li>
+            </a>
+            <a id="links" href="https://www.instagram.com/teacherbarbaraf/">
+                <li>Contato</li>
+            </a>
+            <!--colocar outro link util aqui-->
+            <a id="links" href="link para servicos">
+                <li>Serviços</li>
+            </a>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <!--uso de tag aside para dividr a pag lateralmente-->
+        <aside id="inicio">
+            <h2 id="conheca">Conheça minha história: </h2>
+            <h2>Bárbara Fernandes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid minima ducimus, repellat non
+                unde sunt sed, eligendi error eius quaerat vitae voluptates, est incidunt facere nihil porro molestias!
+                Optio.
+                <span>Deixe seus dados e entraremos em contato!</span>
+            </p>
+            <form>
+                <h1>toda essa parte pode ser retirada, nao faz muito sentido(do cadastro)</h1>
+                <!--Parte de envio para contato-->
+                <label for="nome"></label>
+                <input type="text" placeholder="Nome" name="nome">
+                <label for="email"></label>
+                <input type="email" placeholder="E-mail">
+                <input type="submit" placeholder="Enviar" data-button>
+            </form>
+        </aside>
+        <article>
+          <!--<img id="imglateral" src="./components/images/logo-teacharbarbara.png" alt="teacherbarbaraf">-->  
+        </article>
+    </main>
+    <!--Id para chamar a parte do "sobre" att no CSS-->
+    <div id="about">
+        <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quibusdam sequi nostrum illo doloribus
+            non quos id minima ratione, delectus sapiente, eos doloremque sunt repellat labore beatae voluptatibus
+            reiciendis animi.</h3>
+    </div>
+
+
+
+</body>
+
+</html>

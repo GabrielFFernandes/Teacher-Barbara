@@ -1,0 +1,163 @@
+body {
+    background-color: #490163;
+    color:antiquewhite;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/components/images/capa-classroom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#title {
+    flex-direction: column;
+    line-height: 8px;
+    font-size: 40px;
+    
+}
+
+
+li {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    
+}
+
+a {
+    margin: 5px;
+    color: #ee87ce;
+    font-family: poppinsbold;
+    
+}
+
+a:hover {
+    color: antiquewhite;
+    transition: 0.5s all;
+}
+
+#links {
+    border: 3px solid  #ee87ce;
+    ;
+    padding: 4px;
+    border-radius: 25px;
+}
+
+#links:hover {
+    background-color: #ee87ce;
+    color: white
+}
+
+h1 {
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+   
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 22px;
+    font-family: poppinsbold;
+}
+
+#conheca {
+    margin-left: 0;
+    font-size: 35px;
+    line-height: 30px;
+    font-family: poppinsbold;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#conheca::first-letter {
+    font-size: 60px;
+    color: antiquewhite;
+    font-weight: bold;
+    line-height: .75;
+  }
+
+span {
+    font-family: poppinsbold;
+}
+
+p {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+h3 {
+    text-justify: newspaper;
+    line-height: 25px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: poppinslight;
+    max-width: 800px;
+    border: 1px solid antiquewhite;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+
+#imglateral {
+    display: flex;
+    justify-content:right;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: double 10px #ee87ce;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: #ee87ce;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input {
+    margin-top: 15px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}

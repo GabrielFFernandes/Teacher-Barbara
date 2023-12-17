@@ -42,7 +42,7 @@ header {
 
 #title {
     font-family: poppinslight;
-    margin-left: -380px;
+    margin-left: -250px;
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
@@ -57,14 +57,16 @@ li {
     display: inline-block;
     justify-content: end;
     margin-right: -2px;
-    margin-top: 10px;
     padding: 3px;
     justify-content: space-between;
     font-family: poppinslight;
     
 }
 nav{
-    margin-right: -100px;
+    margin-top: -0px;
+    margin-left: -80px;
+    display: flex;
+    align-items: self-end;
 }
 
 a {
@@ -118,32 +120,32 @@ main{
 
 #inicio{
     justify-content: space-around;
-    margin-top: 50px;
 }
 #textinho{
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 25px;
+    line-height: 27px;
     font-family: poppinslight;
     text-align: justify;
     text-justify: inter-word;
-    margin-left: -200px;
+    margin-left: -80px;
 }
 #conheca {
-    margin-left: -200px;
+    margin-left: -80px;
     font-size: 35px;
-    line-height: 45px;
+    line-height: 60px;
     font-family: poppinslight;
     font-weight: bolder;
     text-align: left;
 }
 
 #learn{   
-    padding: 50px;
+    padding: 0px;
     margin-top: 50px;
     margin-right: -150px;
-    width: 800px;
-    height: 750px;
-    border-radius: 50%;
+    width: 600px;
+    height: 500px;
+    border-radius: 100%;
+    border: 10px #ee87ce;
 }
 span {
     font-family: poppinslight;
@@ -172,8 +174,8 @@ h3 {
 
 #logoBarbara {
 
-    margin-top: 10px;
-    margin-left: -120px;
+    margin-top: -10px;
+    margin-left: -60px;
     align-items: start;
     display: flex;
     justify-content:right;
@@ -189,11 +191,80 @@ section{
     justify-content: center;
     align-items: center;
 }
-#titulo-depoimentos{
-    
-}
+
 #reels-embeded{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+#titulo-depoimentos{
+    font-size: 35px;
+    margin-top: -300px;
+    padding: 80px;
+    margin-left: -250px;
+}
+#img-depoimentos{
+    display: flex;
+    width: 200px;
+    height: 250px;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: -500px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#metodologia{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 0px;
+}
+#titulo-metodologia{    
+    font-size: 50px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+.texto-metodologia{
+    font-size: 28px;
+    text-justify: distribute;
+    line-height: 38px;
+    text-align: left;
+    display:contents;
+    
+}
+#conteudo{
+    display: flex;
+    
+
+}
+#titulo-conteudo{
+    text-align: center;
+    font-size: 40px;
+    flex-direction: column;
+    padding: 40px;
+}
+#contato{
+  margin-top: -150px;
+  display: flex;
+  flex-direction: column;
+}
+#titulo-contato{    
+    font-size: 50px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+#imgs-contato{
+    display: flex;
+    flex-direction: row;
+}
+#simbolo-wpp{
+    width: 100px;
+    height: 100px;
+}
+#simbolo-insta{
+    width: 100px;
+    height: 100px;
 }

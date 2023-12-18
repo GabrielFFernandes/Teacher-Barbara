@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var textoDepoimentos = document.getElementById('texto-depoimentos');
 
     var textos = [
-        "Depoimento 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Depoimento 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Depoimento 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        "'Minha maior queixa sempre foi a falta de empatia dos professores.'",
+        "'Ela realmente está interessada no desenvovimento dos alunos.'",
+        "'Meu inglês evoluiu 100% depois das aulas com a Bárbara.'"
     ];
 
     function mostrarDepoimento(indice) {
@@ -28,8 +28,27 @@ document.addEventListener('DOMContentLoaded', function () {
         setInterval(function () {
             indiceAtual = (indiceAtual + 1) % imagens.length;
             mostrarDepoimento(indiceAtual);
-        }, 5000);
+        }, 10000);
     }
 
     cicloDeDepoimentos();
+});
+document.addEventListener('DOMContentLoaded', function () {
+    var btnTopo = document.getElementById('btnTopo');
+
+    // addEventListener pra verificar se botao foi cilcado
+    btnTopo.addEventListener('click', function () {
+        // comportamento do scroll
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // addEventListener pra verificar se foi scrollado e a pos da pagina, chama funcao anonima
+    window.addEventListener('scroll', function () {
+        // botao so aparece depois de scrollar uma parte da pag
+        if (window.scrollY > 200) {
+            btnTopo.style.display = 'block';
+        } else {
+            btnTopo.style.display = 'none';
+        }
+    });
 });

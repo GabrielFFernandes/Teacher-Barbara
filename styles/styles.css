@@ -28,6 +28,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../Components/fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../Components/fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
     background: linear-gradient(to right, #260058, #9555ea);
     color:antiquewhite;
@@ -49,7 +57,7 @@ header {
 }
 
 #title {
-    font-family: poppinslight;
+    font-family: poppinsbold;
     margin-left: -250px;
     margin-top: 10px;
     display: flex;
@@ -210,6 +218,7 @@ section{
     margin-top: -200px;
     padding: 80px;
     margin-left: -250px;
+    font-family: poppinsbold;
 }
 #img-depoimentos{
     display: flex;
@@ -233,6 +242,7 @@ section{
     padding: 40px;
     display: flex;
     align-items: center;
+    font-family: poppinsbold;
 }
 .texto-metodologia{
     font-size: 28px;
@@ -252,6 +262,7 @@ section{
     font-size: 40px;
     flex-direction: column;
     padding: 40px;
+    font-family: poppinsbold;
 }
 #contato{
   margin-top: -150px;
@@ -263,6 +274,7 @@ section{
     padding: 40px;
     display: flex;
     align-items: center;
+    font-family: poppinsbold;
 }
 #imgs-contato{
     display: flex;

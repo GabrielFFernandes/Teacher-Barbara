@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setInterval(function () {
             indiceAtual = (indiceAtual + 1) % imagens.length;
             mostrarDepoimento(indiceAtual);
-        }, 10000);
+        }, 8000);
     }
 
     cicloDeDepoimentos();

@@ -1,13 +1,35 @@
-const imgs = document.getElementById("img-depoimentos");
-const img = document.querySelector("#img-depoimentos .img-transicao");
+document.addEventListener('DOMContentLoaded', function () {
+    var imagens = document.querySelectorAll('.img-transicao');
+    var titulo = document.getElementById('titulo-depoimentos');
+    var textoDepoimentos = document.getElementById('texto-depoimentos');
 
-let idx = 0;
+    var textos = [
+        "Depoimento 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Depoimento 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Depoimento 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+    ];
 
-function carrossel(){
-    idx++;
-    if(idx >img-transicao.length -1 ){
-        idx = 0;
+    function mostrarDepoimento(indice) {
+        imagens.forEach(function (imagem) {
+            imagem.style.display = 'none';
+        });
+
+        imagens[indice].style.display = 'block';
+
+        titulo.textContent = "Depoimentos de algumas alunas!";
+        textoDepoimentos.textContent = textos[indice];
     }
-    imgs.style.transform= 'translateX(${-idx *250}px)';
-}
-setInterval(carrossel, 1800);
+
+    function cicloDeDepoimentos() {
+        var indiceAtual = 0;
+
+        mostrarDepoimento(indiceAtual);
+
+        setInterval(function () {
+            indiceAtual = (indiceAtual + 1) % imagens.length;
+            mostrarDepoimento(indiceAtual);
+        }, 5000);
+    }
+
+    cicloDeDepoimentos();
+});

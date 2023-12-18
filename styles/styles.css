@@ -20,6 +20,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../Components/fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../Components/fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
     background: linear-gradient(to right, #260058, #9555ea);
     color:antiquewhite;
@@ -199,7 +207,7 @@ section{
 }
 #titulo-depoimentos{
     font-size: 35px;
-    margin-top: -300px;
+    margin-top: -200px;
     padding: 80px;
     margin-left: -250px;
 }

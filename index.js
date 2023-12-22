@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         imagens[indice].style.display = 'block';
 
-        titulo.textContent = "Depoimentos de algumas alunas!";
+       // titulo.textContent = "Depoimentos de algumas alunas!";
         textoDepoimentos.textContent = textos[indice];
     }
 

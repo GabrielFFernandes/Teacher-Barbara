@@ -182,7 +182,7 @@ main{
     font-size: 25px;
     line-height: 27px;
     font-family: poppinslight;
-
+    text-align: justify;
     margin-left: -80px;
 }
 #vamos-juntas{
@@ -206,8 +206,8 @@ main{
     padding: 0px;
     margin-top: 50px;
     margin-right: -150px;
-    width: 500px;
-    height: 510px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     border: 10px #ee87ce;
 }
@@ -330,7 +330,7 @@ section{
     font-family: poppinsbold;
 }
 #contato{
-  margin-top: -150px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
 }
@@ -344,12 +344,18 @@ section{
 #imgs-contato{
     display: flex;
     flex-direction: row;
+    align-items:center;
+    
 }
 #simbolo-wpp{
     width: 100px;
     height: 100px;
 }
 #simbolo-insta{
+    width: 100px;
+    height: 100px;
+}
+#email-icon{
     width: 100px;
     height: 100px;
 }
@@ -367,4 +373,12 @@ section{
 }
 #btnTopo:hover {
     background-color: #9555ea;
+}
+
+footer{
+    display: flex;
+    justify-self: center;
+    font-family: poppinslight;
+    font-size: 8px;
+   
 }

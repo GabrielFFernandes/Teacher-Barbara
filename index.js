@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function cicloDeDepoimentos() {
+       //contador simples
         var indiceAtual = 0;
 
         mostrarDepoimento(indiceAtual);
-
+        //seta timer pra passar as imagens
         setInterval(function () {
+            //pega o modulo pra ficar entre 0,1,2
             indiceAtual = (indiceAtual + 1) % imagens.length;
             mostrarDepoimento(indiceAtual);
         }, 8000);

@@ -11,23 +11,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function mostrarDepoimento(indice) {
         imagens.forEach(function (imagem) {
-            imagem.style.display = 'none';
+            imagem.classList.add('hidden');
         });
 
-        imagens[indice].style.display = 'block';
-
-       // titulo.textContent = "Depoimentos de algumas alunas!";
+        imagens[indice].classList.remove('hidden');
         textoDepoimentos.textContent = textos[indice];
     }
 
     function cicloDeDepoimentos() {
-       //contador simples
         var indiceAtual = 0;
 
         mostrarDepoimento(indiceAtual);
-        //seta timer pra passar as imagens
         setInterval(function () {
-            //pega o modulo pra ficar entre 0,1,2
             indiceAtual = (indiceAtual + 1) % imagens.length;
             mostrarDepoimento(indiceAtual);
         }, 8000);
@@ -35,22 +30,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cicloDeDepoimentos();
 });
+
 document.addEventListener('DOMContentLoaded', function () {
     var btnTopo = document.getElementById('btnTopo');
 
-    // addEventListener pra verificar se botao foi cilcado
     btnTopo.addEventListener('click', function () {
-        // comportamento do scroll
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // addEventListener pra verificar se foi scrollado e a pos da pagina, chama funcao anonima
     window.addEventListener('scroll', function () {
-        // botao so aparece depois de scrollar uma parte da pag
         if (window.scrollY > 200) {
-            btnTopo.style.display = 'block';
+            btnTopo.classList.remove('opacity-0', 'invisible');
+            btnTopo.classList.add('opacity-100', 'visible');
         } else {
-            btnTopo.style.display = 'none';
+            btnTopo.classList.add('opacity-0', 'invisible');
+            btnTopo.classList.remove('opacity-100', 'visible');
         }
+    });
+});
+
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function () {
+    var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    var mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    var mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+        });
     });
 });
